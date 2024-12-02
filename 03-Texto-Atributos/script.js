@@ -79,3 +79,51 @@ Modificar el contenido con InnerHTML
 
 titulo.innerHTML = "¡Amigos <span>Pokémon</span>!"
 lista.innerHTML = "<li>Squirtle 🐢</li> <li>Mimikyu👻</li> <li>Rapidash Galar</li>"
+
+/* 
+ getAtrribute()
+
+ Devuelve el valor del atributo del elemento.
+
+ elemento.getAttribute(atributo)
+*/
+
+const enlace = document.getElementsByTagName("a");
+
+console.log(enlace[0].getAttribute("href"))
+
+/* 
+ removeAtribute ()
+
+ Elimina el valor del atributo de un elemento.
+
+  elemento.removeAttribute(atributo)
+ */
+
+enlace [0].removeAttribute("href");
+console.log(enlace[0].getAttribute("href"))
+
+/* 
+ setAttribute()
+
+ Asigna un atributo y un valor a un elemento.
+
+   elemento.setAttribute(atributo, valor)
+
+ -Sobreescribir un atributo ya declarado.
+ -Crear un nuevo atributo y su valor.
+*/
+
+enlace[0].setAttribute("href", "https://youtu.be/fUsyjkmELHY?si=uOzrbUyjj4xjMNj2");
+
+console.log(enlace[0].getAttribute("href"));
+
+/* Antes */
+
+console.log(enlace[0].getAttribute("target"));
+
+enlace[0].setAttribute("target", "_blank");
+
+/* Despúes */
+
+console.log(enlace[0].getAttribute("target"));
