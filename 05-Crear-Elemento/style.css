@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: rgb(255, 242, 195);
+    padding: 24px;
+    max-width: 400px;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    margin-bottom: 24px;
+    color: rgb(248, 170, 118);
+}
+
+.list {
+    list-style: none;
+}
+
+.list-item {
+    padding: 12px 8px;
+    color: whitesmoke;
+    margin-bottom: 12px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.bg-one {
+    background-color: lightsalmon;
+}
+
+.bg-two {
+    background-color: rgb(68, 209, 172);
+}
