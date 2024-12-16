@@ -1,0 +1,25 @@
+body {
+    background-color: darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornsilk;
+}
+
+button {
+    width: 200px;
+    height: 120px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    color: rgb(253, 254, 255);
+    cursor: pointer;
+    background-color: darkseagreen;
+    box-shadow: 0 0 0 0 rgb(41, 120, 146);
+    transition: all .300s ease;
+}
+
+button:hover {
+    background-color: lightgreen;
+    color: rgb(253, 254, 255);
+    box-shadow: 8px 8px 0 0 beige;
+}
