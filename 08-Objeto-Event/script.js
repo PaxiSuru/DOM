@@ -22,6 +22,9 @@ Propiedades del evento event:
 -code: devuelve el código de la tecla presionada.
 -key: devuelve el valor de la tecla presionada.
 
+-clientX: esto devuelve en la posición horizontal de puntero (mouse) en relación a la ventana del navegador.
+-clientY: devuelve la posición vertical del puntero del mouse.
+
 */
 
 const button = document.getElementsByClassName("button");
