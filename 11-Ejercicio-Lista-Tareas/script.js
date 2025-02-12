@@ -13,7 +13,7 @@ addButton.addEventListener('click', createTask);
 function createTask() {
     if (taskInput.value) {
         //Crear los elementos que integran la tarea
-        console.log(taskInput.value);
+       
 
         //Creamos el contenedor de una tarea
         const taskItem = document.createElement('div');
@@ -40,6 +40,16 @@ function createTask() {
         taskItem.append(taskText, taskIcons);
         taskList.append(taskItem);
 
+        //Escuchadores de los iconos
+        iconCheck.addEventListener('click', (e) => {
+            e.target.parentNode.parentNode.classList.toggle('complete');
+        });
+
+        //Definir un escuchador al elemento iconDelete
+        iconDelete.addEventListener('click', (e) => {
+            e.target.parentNode.parentNode.remove();
+        })
+
 
         //Regresamos el valor vacio al input
         taskInput.value = '';
@@ -53,3 +63,12 @@ const taskItem = document.createElement('div');
 taskItem.classList.add('task');
 
 console.log(taskItem.classList);
+
+//Enter
+
+taskInput.addEventListener('keydown', (e) => 
+    {
+        if (e.key === 'Enter'){
+            createTask();
+        }
+    });
